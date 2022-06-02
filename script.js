@@ -7,7 +7,7 @@ function convert() {
     word = word.split('');
     var bold_word = '';
     var non_bold_word = '';
-    var half_len = Math.ceil(word.length / 2);
+    var half_len = Math.floor(word.length / 2);
     for (let i = 0; i < half_len; i++) {
       bold_word += word[i];
     }
@@ -22,3 +22,4 @@ function convert() {
 }
 
 document.getElementById('btn').addEventListener('click', convert);
+document.addEventListener('keyup', convert);
