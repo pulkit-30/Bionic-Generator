@@ -7,16 +7,22 @@ body {
   height: 100vh;
   background-color: #031f30;
   overflow: hidden;
+  color: white;
+  flex-direction: column;
+}
+b {
+  color: white;
+}
+.flex {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  color: white;
 }
-.bold {
-  /* font-weight: bold; */
-  color: white;
+.main-box {
+  width: 100vw;
 }
 #user-para {
+  resize: none;
   outline: none;
   padding: 5px 20px;
   font-size: 20px;
@@ -29,8 +35,8 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
   width: 40vw;
-  border: 2px solid white;
-  color: rgba(255, 255, 255, 0.589);
+  border: 1px solid white;
+  color: white;
 }
 #out-para {
   outline: none;
@@ -45,20 +51,18 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
   width: 40vw;
-  border: 2px solid white;
-  color: rgba(255, 255, 255, 0.589);
+  border: 1px solid white;
+  color: rgba(255, 255, 255, 0.721);
 }
 #btn {
   cursor: pointer;
-  position: absolute;
-  bottom: 20px;
   height: 40px;
   width: 200px;
   border: none;
   background: none;
   color: black;
   border: 1px solid white;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.349);
   transition: 0.3s;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
@@ -77,8 +81,6 @@ body {
 }
 
 h1 {
-  position: absolute;
-  top: 10px;
   font-family: fantasy;
   font-size: 30px;
 }
