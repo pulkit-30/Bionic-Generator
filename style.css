@@ -1,86 +1,158 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-body {
-  font-weight: lighter;
-  height: 100vh;
-  background-color: #031f30;
-  overflow: hidden;
-  color: white;
-  flex-direction: column;
-}
-b {
-  color: white;
-}
-.flex {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.main-box {
-  width: 100vw;
-}
-#user-para {
-  resize: none;
-  outline: none;
-  padding: 5px 20px;
-  font-size: 20px;
-  letter-spacing: 2px;
-  line-height: 2;
-  font-family: sans-serif;
-  border: none;
-  background: none;
-  height: 80vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-  width: 40vw;
-  border: 1px solid white;
-  color: white;
-}
-#out-para {
-  outline: none;
-  padding: 5px 20px;
-  font-size: 20px;
-  letter-spacing: 2px;
-  line-height: 2;
-  font-family: sans-serif;
-  border: none;
-  background: none;
-  height: 80vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-  width: 40vw;
-  border: 1px solid white;
-  color: rgba(255, 255, 255, 0.721);
-}
-#btn {
-  cursor: pointer;
-  height: 40px;
-  width: 200px;
-  border: none;
-  background: none;
-  color: black;
-  border: 1px solid white;
-  background-color: rgba(255, 255, 255, 0.349);
-  transition: 0.3s;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -o-transition: 0.3s;
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #FFFF;
+    scroll-behavior: smooth;
 }
 
-#btn:hover {
-  transform: scale(1.1);
-  background-color: #031f30;
-  color: white;
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -o-transform: scale(1.1);
+.header{
+    width: 100%;;
+    height: 100vh;
+    padding: 0 10%;
+   /* border:2px solid black; */
+    padding-left: 50px;
+    /* margin-bottom: -20px; */
 }
 
-h1 {
-  font-family: fantasy;
-  font-size: 30px;
+.text-box{
+    margin-top: 90px;
+    max-width: 600px;
+    /* border:2px solid black; */
 }
+
+.text-box h1{
+    font-size: 150px;
+    margin-bottom: 20px;
+    line-height: 120px;
+    font-family: 'Lexend', sans-serif;
+    font-weight: lighter;
+    /* border:2px solid black; */
+
+}
+
+.text-box p{
+    font-family: 'Space Mono', monospace;
+    color: #787ff6;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 25px;
+    /* border:2px solid black; */
+    margin-left: 20px;
+    margin-top: 50px;
+
+}
+
+ a{
+    /*border:2px solid black;
+    */display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: #303596;
+    padding: 8px 25px;
+    font-size: 30px;
+    margin-top: 80px;
+    border-radius: 30px;
+    font-family: 'Space Mono', monospace;
+    font-weight: lighter;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    transition:0.5s ;
+    -webkit-transition:0.5s ;
+    -moz-transition:0.5s ;
+    -ms-transition:0.5s ;
+    -o-transition:0.5s ;
+    margin-right: 20px;
+}
+
+a:hover{
+    background:#787ff6;
+}
+
+
+
+.main-image{
+    position: absolute;
+    top: 7%;
+    right: 3%;
+    /* border:2px solid black; */
+
+}
+
+.main-image img{
+    display: block;
+    /* padding-top: 8px; */
+    width: 700px;
+}
+
+::-webkit-scrollbar{
+    width: 1em;
+}
+
+::-webkit-scrollbar-track{
+    margin-block: .5em;
+    background: #787ff6;
+    border-radius: 100vw;
+    -webkit-border-radius: 100vw;
+    -moz-border-radius: 100vw;
+    -ms-border-radius: 100vw;
+    -o-border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #303596;
+    border: .25em solid #787ff6;
+    border-radius: 100vw;
+    -webkit-border-radius: 100vw;
+    -moz-border-radius: 100vw;
+    -ms-border-radius: 100vw;
+    -o-border-radius: 100vw;
+}
+
+.second-page{
+    height:100vh;
+    /* border: 2px solid black; */
+}
+
+.second-page .second-h{
+    height:220px;
+    /* border: 2px solid black; */
+    font-size: 40px;
+    font-family: 'Lexend', sans-serif;
+    color: white
+
+}
+
+.second-page h1{
+    background-color: #303596;
+    font-weight: lighter;
+    padding: 40px;
+    padding-bottom: 50px;
+    line-height: 80px;
+    margin-bottom: 50px;
+}
+
+.second-page .second-p{
+    /* border: 2px solid black; */
+    font-size: 30px;
+    background: #787ff6;
+    /* margin-left: 20px; */
+    height: 100%;
+}
+
+.second-p p{
+    background: transparent;
+    color: white;
+    font-family: 'Space Mono', monospace;
+    padding-left: 45px;
+    font-size: 30px;
+    /* border:2px solid black; */
+    max-width: 70%;
+    padding-top: 100px;
+    line-height: 60px;
+}
+
