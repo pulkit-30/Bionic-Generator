@@ -21,7 +21,7 @@
         </p>
       </div>
       <div class="main-image">
-        <img src="./assets/cover.jpg" alt="" />
+        <object data="./assets/poster.svg" class="img-poster"></object>
       </div>
       <div class="button">
         <a href="#second-page">HOW IT WORKS ?</a>
@@ -51,11 +51,7 @@
         </h1>
       </div>
       <div class="second-p">
-        <p>
-          Bionic Reading revises texts so that the most concise parts of words
-          are highlighted. This guides the eye over the text and the brain
-          remembers previously learned words more quickly.
-        </p>
+        <p id="static-para"></p>
       </div>
     </div>
 
@@ -68,16 +64,15 @@
       </div>
       <div class="main-box">
         <textarea
-        name="user-para"
-        id="user-para"
-        cols="30"
-        rows="10"
-        placeholder="Input paragraph....."
+          name="user-para"
+          id="user-para"
+          cols="30"
+          rows="10"
+          placeholder="Input paragraph....."
         ></textarea>
         <div id="out-para" class="out-para"></div>
       </div>
     </div>
   </body>
   <script src="/public/script.js"></script>
-
 </html>

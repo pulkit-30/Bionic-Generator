@@ -1,5 +1,13 @@
-function convert() {
-  var str = document.getElementById('user-para').value;
+const para = `
+The word “bionic” is composed of the terms bios (life) and technology.
+We use the human brain, a phenomenon of nature, and combine it with
+the reading technology & therefore “Bionic Reading” is formed.
+`;
+
+document.getElementById('static-para').innerHTML = convert(true);
+
+function convert(isStatic = false) {
+  var str = isStatic ? para : document.getElementById('user-para').value;
   var new_str = '';
   str.replace(/\p{L}+/gu, (word) => {
     const { length } = word;
@@ -7,10 +15,11 @@ function convert() {
     if (length > 3) midPoint = Math.ceil(length / 2);
     const firstHalf = word.slice(0, midPoint);
     const secondHalf = word.slice(midPoint);
-    const htmlWord = `<b>${firstHalf}</b>${secondHalf}`;
+    const htmlWord = `<strong>${firstHalf}</strong>${secondHalf}`;
     new_str += htmlWord + ' ';
   });
-  document.getElementById('out-para').innerHTML = new_str;
+  !isStatic && (document.getElementById('out-para').innerHTML = new_str);
+
   return new_str;
 }
 
