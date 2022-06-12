@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: #FFFF;
     scroll-behavior: smooth;
 }
 
@@ -156,3 +155,27 @@ a:hover{
     line-height: 60px;
 }
 
+
+.main-box{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #787ff6;
+}
+
+.main-box textarea{
+    margin: 20px auto;
+    border: 5px solid white;
+    height: 80vh;
+    width: 40%;
+    background: none;
+    font-size: 40px;    
+}
+
+.main-box .out-para{
+    margin: 20px auto;
+    border: 5px solid white;
+    height: 80vh;
+    width: 40%;
+    font-size: 40px;    
+}
