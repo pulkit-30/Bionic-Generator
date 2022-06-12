@@ -3,7 +3,6 @@ The word “bionic” is composed of the terms bios (life) and technology.
 We use the human brain, a phenomenon of nature, and combine it with
 the reading technology & therefore “Bionic Reading” is formed.
 `;
-
 document.getElementById('static-para').innerHTML = convert(true);
 
 function convert(isStatic = false) {
@@ -19,8 +18,7 @@ function convert(isStatic = false) {
     new_str += htmlWord + ' ';
   });
   !isStatic && (document.getElementById('out-para').innerHTML = new_str);
-
   return new_str;
 }
 
-document.addEventListener('keyup', convert);
+document.addEventListener('keyup', () => convert(false));
